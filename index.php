@@ -2,7 +2,7 @@
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
 
-    require_once './article.php';
+    include('./article.php') ;
    
 ?>
 
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="style.css">
         <script>
         function getAlls(){
-            var result = "<?php   include('affiche.php'); getAll();?>"
+            var result = "<?php    getAll();?>"
             document.getElementById("afichage").innerHTML = result;
             
         }
